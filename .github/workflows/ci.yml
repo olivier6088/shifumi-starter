@@ -29,6 +29,9 @@ jobs:
     - name: Install dev tools
       run: pip install flake8 coverage
 
+    - name: Set PYTHONPATH
+      run: echo "PYTHONPATH=$PWD" >> $GITHUB_ENV
+
     - name: Run tests
       run: pytest
 
