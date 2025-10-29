@@ -8,3 +8,24 @@ Starter code for shifumi.
 • 	Améliorer les messages utilisateur
 • 	Étendre le jeu en CLI ou web (Flask ?)
 • 	Ajouter `coverage`, `flake8`, ou `black`  dans le pipeline
+
+## Correction
+
+Lancement des tests avec la commande `pytest` depuis la racine du projet:
+```bash
+python -m pytest tests/
+```
+
+Lancement de la couverture des tests avec:
+```bash
+pip install coverage
+coverage run -m pytest tests/
+coverage report
+coverage html # rapport visuel
+```
+
+Lancement de la vérification du linting avec:
+```python
+pip install flake8
+flake8 shifumi/ tests/
+```
