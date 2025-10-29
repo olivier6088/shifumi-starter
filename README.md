@@ -29,3 +29,11 @@ Lancement de la vérification du linting avec:
 pip install flake8
 flake8 shifumi/ tests/
 ```
+
+Simulation locale des test du CI github:
+```bash
+pytest
+flake8 shifumi/ tests/
+coverage run -m pytest tests/
+coverage report
+```

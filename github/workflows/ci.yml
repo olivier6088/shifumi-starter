@@ -1,6 +1,14 @@
 name: CI Python Shifumi
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+      - correction
+  pull_request:
+    branches:
+      - main
+      - correction
 
 jobs:
   test:
