@@ -37,3 +37,8 @@ flake8 shifumi/ tests/
 coverage run -m pytest tests/
 coverage report
 ```
+
+Reformater automatiquement les fichiers suivant la `pep8` avec `black`:  
+```bash
+black shifumi tests
+```

@@ -10,6 +10,7 @@ def get_computer_choice():
 def normalize(choice):
     return choice.lower().strip()
 
+
 def determine_winner(player, computer):
     player = normalize(player)
     computer = normalize(computer)
@@ -19,13 +20,16 @@ def determine_winner(player, computer):
 
     if player == computer:
         return "tie"
-    elif (player == "rock" and computer == "scissors") or \
-         (player == "paper" and computer == "rock") or \
-         (player == "scissors" and computer == "paper"):
+    elif (
+        (player == "rock" and computer == "scissors")
+        or (player == "paper" and computer == "rock")
+        or (player == "scissors" and computer == "paper")
+    ):
         return "win"
     else:
         return "lose"
-    
+
+
 if __name__ == "__main__":
     player = input("Choisis rock, paper ou scissors : ")
     computer = get_computer_choice()
